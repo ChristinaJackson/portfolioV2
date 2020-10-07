@@ -6,8 +6,10 @@
     --mainRed:#C50707;
     /* --mainRed: #EC0909; */
     --mainYellow: #FFFB1F;
+    --purpleBase: #8336e7;
+    --purpleDarker: #6E1ADB;
     --mainBlack: #0E101A;
-
+ 
     /* fonts */
     --headingFont: 'Catamaran', sans-serif;
     --bodyFont: 'Inconsolata', monospace;
@@ -45,7 +47,8 @@ padding: 0.5rem 1rem;
 border: 3px solid #000;
 box-shadow: -4px 4px 0px 0 rgba(0, 0, 0, 0.92);
 margin-left: 3rem;
-background-color: beige;
+background-color: red;
+color: white;
 }
 header li:first-child{
 margin-left: 6px;
@@ -148,7 +151,6 @@ a:hover{
 .box-wrapper-column h2{
     color: black;
     background-color: white;
-    background-color: var(--mainBlue);
     border-style: none solid solid none;
     border-width: 2px;
     border-color: #000;
@@ -193,20 +195,6 @@ a:hover{
     left: 20px;
     bottom: -10px;
   }
-.long-paragraph span{
-    /* margin-right: -22px; */
-    font-family: var(--bodyFont);
-    /* margin-top: -22px; */
-    font-size:50px;
-}
-span.quote-span{
-    float: left;
-     /* margin-left: 20px; */
-     font-family: var(--bodyFont);
-     /* margin-top: -22px; */
-    font-size:50px;
-    /* border: solid red 3px; */
-}
 .list{
     display: flex;
     flex-direction: column;
@@ -287,37 +275,48 @@ span.quote-span{
 }
 
 /* ----------------image styling -------------------*/
+
 .blue{
     background-color:var(--mainBlue);
-    background-image: url("./images/speedLines.png");
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .red{
     background-color:var(--mainRed);
-    /* background-color:var(--mainGreen); */
-    background-image: url("./images/cornerdots.png");
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: repeat; 
 }
 .green{
     background-color:var(--mainGreen);
-    background-image: url("./images/bigdots.png");
-    background-position: 50% 50%;
-    background-size: contain;
-    background-repeat: repeat;  
+}
+.purple{
+    background-color: var(--purpleBase);
 }
 
-.yellow{
-    background-color: var(--mainYellow);
-    background-color: #8336E7;
+.purple-dark{
+    background-color: var(--purpleDarker);
+}
+.burst{
     background-image: url("./images/burst.png");
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat; 
 }
+.corner-dots{
+    background-image: url("./images/cornerdots.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: repeat; 
+}
+.small-dots{
+    background-image: url("./images/dots.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+.speed-lines{
+    background-image: url("./images/speedLines.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .self{
     margin-top: 2rem;
     background-image: url("./images/avatar.png");
