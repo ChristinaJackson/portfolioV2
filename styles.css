@@ -393,7 +393,7 @@ div.medium.speed-lines{
 
 @media only screen and (max-width: 600px) {
 .small, .medium, .large, .extra-large{
-    background-color: lightblue;
+    /* background-color: lightblue; */
     min-width: 100%;
     }
 }
