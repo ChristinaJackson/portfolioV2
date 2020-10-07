@@ -1,8 +1,9 @@
 
 :root {
     --mainBlue: #1E2EDE;
-    --mainGreen: #00CC66;
+    --mainGreen: #0BC163;
     --mainRed: #FB232E;
+    --mainRed:#C50707;
     /* --mainRed: #EC0909; */
     --mainYellow: #FFFB1F;
     --mainBlack: #0E101A;
@@ -17,7 +18,12 @@ box-sizing: border-box;
 padding: 0;
 margin: 0;
 }
-
+body{
+    /* background-image: url('./images/lineBackground.jpg'); */
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: repeat; 
+}
 
 ul, ol{
 list-style: none;
@@ -39,6 +45,7 @@ padding: 0.5rem 1rem;
 border: 3px solid #000;
 box-shadow: -4px 4px 0px 0 rgba(0, 0, 0, 0.92);
 margin-left: 3rem;
+background-color: beige;
 }
 header li:first-child{
 margin-left: 6px;
@@ -72,12 +79,14 @@ margin: 0.2rem;
 border: solid black 3px;
 }
 .small{
-    min-width: 200px;
-    flex-grow: 1;
+    min-width: 300px;
+    max-width: 500px;
+    flex: 1;
 }
 .medium{
     min-width: 400px;
-    flex-grow: 1;
+    max-width: 800px;
+    flex: 1;
 }
 .large{
     min-width: 400px;
@@ -87,26 +96,17 @@ border: solid black 3px;
     min-width:500px;
     flex-grow: 1;
 }
-
-.blue{
-    background-color:var(--mainBlue);
-}
-.red{
-    background-color:var(--mainRed);
-}
-.green{
-    background-color:var(--mainGreen);
-    background-image: url("./images/bigdots.png");
-    background-position: 50% 50%;
-    background-size: contain;
-    background-repeat: repeat;
-    min-width: 400px;
-    flex-grow: 1;
+.small.title h3{
+    color: white;
+    text-shadow: -3px 3px 1px rgba(0, 0, 0, 0.99);
+    font-size: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
 }
 
-.yellow{
-    background-color: var(--mainYellow);
-}
 .blue.links{
     display: flex;
     flex-direction: column;
@@ -148,6 +148,7 @@ a:hover{
 .box-wrapper-column h2{
     color: black;
     background-color: white;
+    background-color: var(--mainBlue);
     border-style: none solid solid none;
     border-width: 2px;
     border-color: #000;
@@ -157,12 +158,7 @@ a:hover{
     transform: skew(-22deg, 0deg);
     flex-shrink: 2;
 }
-.small.blue.intro{
-    background-image: url("./images/burst.png");
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 .blue h3{
     display: flex;
     align-items: center;
@@ -171,16 +167,142 @@ a:hover{
     color: white;
     font-size: 3rem;
 }
-.green p{
+.long-paragraph{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     background-color: hsla(0, 0%, 100%, 0.95);
     box-shadow: -4px 4px 0 0 #000;
     max-width: 40ch;
     padding: 1rem;
     border: solid var(--mainBlack) 2px;
     margin: 1rem auto;
-    
 }
+.long-paragraph span{
+    /* margin-right: -22px; */
+    font-family: var(--bodyFont);
+    /* margin-top: -22px; */
+    font-size:50px;
+}
+span.quote-span{
+    float: left;
+     /* margin-left: 20px; */
+     font-family: var(--bodyFont);
+     /* margin-top: -22px; */
+    font-size:50px;
+    /* border: solid red 3px; */
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.list li {
+    /* position: relative; */
+    font-size: 1.2rem;
+    background-color: white;
+    border: solid black 2px;
+    /* box-shadow: -4px 4px 0 0 #000; */
+    margin: 0.25rem;
+    padding: 0.25rem;
+    text-align: center;
+}
+.list li:before{
+    content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 12px solid  white;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+  border-bottom: 10px solid transparent;
+  left: 0px;
+  bottom: -12px;
+}
+.list ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex: 1;
+}
+
+
+.list h2{
+    display: inline-block;
+    background-color:whitesmoke;
+    border-bottom: solid black 2px;
+    border-right: solid black 2px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.screenshot {
+    box-shadow: 2px 2px 3px 0px rgba(1,14,19,1);
+    margin: 1rem;
+    border: solid black 1px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 200px;
+    width: 300px;
+  }
+  .project:hover {
+    transform: scale(1.05);
+  }
+  .project-info{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+  }
+  .project-links{
+    display: flex;
+    flex-direction: row;
+  }
+  .project-links a{
+      color: black;
+      background-color: white;
+      border: solid black 2px;
+      padding:  0.25rem 0.5rem;
+      box-shadow: -4px 4px 0 0 #000;
+}
+
 /* ----------------image styling -------------------*/
+.blue{
+    background-color:var(--mainBlue);
+    background-image: url("./images/speedLines.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.red{
+    background-color:var(--mainRed);
+    /* background-color:var(--mainGreen); */
+    background-image: url("./images/cornerdots.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: repeat; 
+}
+.green{
+    background-color:var(--mainGreen);
+    background-image: url("./images/bigdots.png");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: repeat;  
+}
+
+.yellow{
+    background-color: var(--mainYellow);
+    background-color: #8336E7;
+    background-image: url("./images/burst.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
 .self{
     margin-top: 2rem;
     background-image: url("./images/avatar.png");
@@ -190,15 +312,23 @@ a:hover{
     flex: 1;
 }
 .wow{
-    height: 100%;
+    /* height: 100%; */
     background-image: url("./images/wow.png");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
     padding: 10px;
 }
+.pow{
+    /* height: 100%; */
+    background-image: url("./images/pow.png");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px; 
+}
 @media only screen and (max-width: 600px) {
-.red, .large, .blue{
+.small, .medium, .large, .extra-large{
     background-color: lightblue;
     min-width: 100%;
     }
