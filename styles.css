@@ -102,7 +102,7 @@ header li:hover{
     flex-wrap: wrap;
     align-items: center;
     background-color: whitesmoke;
-    box-shadow: 4px 10px 0 0 #000;
+    /* box-shadow: 4px 10px 0 0 #000; */
     max-width: 40ch;
     padding: 1rem;
     margin: 1rem auto;
