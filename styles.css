@@ -51,7 +51,8 @@ nav ul{
     margin:  1rem 2rem;
 }
 
-nav li{
+
+nav ul li a{
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -60,10 +61,11 @@ nav li{
     box-shadow: -4px 4px 0px 0 rgba(0, 0, 0, 0.92);
     margin: 0.5rem 1rem;
     background-color: whitesmoke;
+    color: black;
 }
 
-nav li:first-child{
-    margin-left: -4px;
+nav li a:first-child{
+    margin-left: -1px;
 }
 
 nav li:active{
@@ -403,7 +405,7 @@ a:hover{
 
 /* ---------------------Modals------------------ */
 /* The Modal */
-#cake-modal, #water-modal, #healing-modal {
+#cake-modal, #water-modal, #healing-modal, #about-modal {
     display: none; 
     position: fixed; 
     z-index: 1;
@@ -486,7 +488,7 @@ a:hover{
     .long-paragraph{
         margin: 1rem;
     }
-    nav li{
+    nav ul li a{
       padding: 0.2rem 0.3rem;  
     }
     nav li:first-child{

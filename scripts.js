@@ -1,7 +1,7 @@
 const self = document.getElementById('self');
 const cakeStore = document.getElementById('cake-about-project');
 const projectUL = document.getElementsByClassName("project-links");
-
+const reviews = document.getElementById('reviews')
 
 window.addEventListener('DOMContentLoaded', (e) => {
     self.classList.toggle('closed');
@@ -48,3 +48,14 @@ function showModalById(id) {
     }
 };
 
+reviews.addEventListener('click', (e) => {
+    if (e.target.textContent === 'Reviews') {
+        const reviewModal = document.getElementById('about-modal');
+        reviewModal.style.display = 'block';
+        reviewModal.addEventListener('click', (e) => {
+            if (e.target.textContent === '×') {
+                reviewModal.style.display = 'none';
+            }
+        })
+    }
+})
