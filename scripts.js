@@ -36,7 +36,7 @@ function showModalById(id) {
                 waterModal.style.display = 'none';
             }
         })
-    } else if (id = 'healingwaters-about') {
+    } else if (id === 'healingwaters-about') {
         const healingModal = document.getElementById('healing-modal');
         const healingClose = document.getElementById('healing-close');
         healingModal.style.display = 'block';
@@ -46,9 +46,7 @@ function showModalById(id) {
             }
         })
     }
-};
-
-
+}
 reviews.addEventListener('click', (e) => {
     if (e.target.textContent === 'Reviews') {
         const reviewModal = document.getElementById('about-modal');
@@ -59,4 +57,4 @@ reviews.addEventListener('click', (e) => {
             }
         })
     }
-})
+});
