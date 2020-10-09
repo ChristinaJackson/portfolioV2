@@ -114,8 +114,7 @@ nav li:hover{
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 1.5em;
-    height: 100vh;
+    margin: 1.5rem;
 }
 
 #panel-grid > *{
@@ -257,10 +256,10 @@ nav li:hover{
 .list li {
     font-size: 1.2rem;
     background-color: white;
-    border: solid black 3px;
+    border: solid black 2px;
     margin: 0.25rem;
-    padding: 0.5rem;
-    border-radius: 2px;
+    padding: 0.4rem;
+    border-radius: 10px;
     font-family: var(--bodyFont);
     text-align: center;
 }
@@ -389,7 +388,16 @@ a:hover{
             transform: scale(1.05);
 }
 
+.project-links li a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+    background-color:var(--purpleBase);
+    color: white;
 
+}
 /* ----------------tile colors -------------------*/
 
 .blue{
@@ -636,7 +644,6 @@ a:hover{
       padding: 0.2rem 0.3rem;  
     }
     nav li:first-child{
-        /* justify-content: center; */
         margin-left: -10px;
     }
     .blue.links h3{
@@ -667,7 +674,7 @@ a:hover{
 @media only screen and (min-width: 900px) {
     #panel-grid{
         max-width: 1200px;
-        margin: auto;
+        margin: 1rem auto;
     }
     nav ul{
         max-width: 1200px;
