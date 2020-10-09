@@ -1,4 +1,3 @@
-
 :root {
     /* colors */
     --mainBlue: #1E2EDE;
@@ -8,10 +7,10 @@
     --purpleBase: #8336e7;
     --purpleDarker: #6E1ADB;
     --mainBlack: #0E101A;
+
     /* fonts */
     --headingFont: 'Catamaran', sans-serif;
     --bodyFont: 'Inconsolata', monospace;
-
 }
 
 *{
@@ -182,7 +181,6 @@ nav li:hover{
     font-family: var(--bodyFont);
     text-align: center;
 }
-
 
 .list h2{
     background-color:whitesmoke;
