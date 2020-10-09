@@ -500,6 +500,7 @@ a:hover{
     }
 }
 
+
 @media only screen and (min-width: 900px) {
     #panel-grid{
         max-width: 1200px;

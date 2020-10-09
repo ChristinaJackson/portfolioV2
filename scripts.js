@@ -48,6 +48,7 @@ function showModalById(id) {
     }
 };
 
+
 reviews.addEventListener('click', (e) => {
     if (e.target.textContent === 'Reviews') {
         const reviewModal = document.getElementById('about-modal');
