@@ -1,14 +1,10 @@
-//modal event listeners will need to be more specific 
-//look into how event bubbling is working on the project ULs
-//dont like the loop through everything
-//
 const self = document.getElementById('self');
 const cakeStore = document.getElementById('cake-about-project');
 const projectUL = document.getElementsByClassName("project-links");
 
 
 window.addEventListener('DOMContentLoaded', (e) => {
-    self.classList.toggle('closed')
+    self.classList.toggle('closed');
 })
 
 for (let i = 0; i < projectUL.length; i++) {
@@ -17,7 +13,7 @@ for (let i = 0; i < projectUL.length; i++) {
             showModalById(e.target.id);
         }
     })
-}
+};
 
 //add event listener once modal is displayed 
 function showModalById(id) {
@@ -50,5 +46,5 @@ function showModalById(id) {
             }
         })
     }
-}
+};
 

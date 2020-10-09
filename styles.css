@@ -13,6 +13,7 @@
     --bodyFont: 'Inconsolata', monospace;
 
 }
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -26,7 +27,6 @@ body{
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: repeat; 
-
 }
 
 ul, ol{
@@ -62,6 +62,7 @@ nav li{
     margin: 0.5rem 1rem;
     background-color: whitesmoke;
 }
+
 nav li:first-child{
     margin-left: -4px;
 }
@@ -69,10 +70,10 @@ nav li:first-child{
 nav li:active{
     box-shadow: none;
 }
+
 nav li:hover{
     cursor: pointer;
     transform: scale(1.05);
-    
 }
 
 #panel-grid{
@@ -82,6 +83,7 @@ nav li:hover{
     margin: 1.5em;
     height: 100vh;
 }
+
 #panel-grid > *{
     display: flex;
     min-height: 220px;
@@ -99,6 +101,7 @@ nav li:hover{
     align-items:center;
     justify-content: center;
 }
+
 .long-paragraph{
     display: flex;
     flex-wrap: wrap;
@@ -110,6 +113,7 @@ nav li:hover{
     position: relative;
     border-radius: 40px;
 }
+
 .long-paragraph:before {
     content: "";
     width: 0px;
@@ -121,7 +125,7 @@ nav li:hover{
     border-bottom: 20px solid transparent;
     left: 20px;
     bottom: -10px;
-  }
+}
 
 .box-wrapper-column{
     width: 100%;
@@ -188,7 +192,8 @@ nav li:hover{
 }
 
 
-/* ----------Showcase project styling----- */
+/* --------------Showcase project styling------------- */
+
 .screenshot {
     box-shadow: 2px 2px 3px 0px rgba(1,14,19,1);
     margin:  1rem 1rem 0 1rem;
@@ -198,9 +203,11 @@ nav li:hover{
     height: 200px;
     width: 300px;
   }
+
   .project-info img:hover {
     transform: scale(1.2);
   }
+
   .project-info{
       display: flex;
       flex-direction: column;
@@ -208,11 +215,13 @@ nav li:hover{
       align-items: center;
       width: 100%;
   }
+
   .project-links{
     display: flex;
     flex-direction: row;
     margin: 1.5rem;
   }
+  
   .project-links li a{
       color: black;
       background-color: white;
@@ -221,27 +230,31 @@ nav li:hover{
       box-shadow: -4px 4px 0 0 #000;
 }
 
-/* -----------link styling -----------*/
+/* -----------------link styling ---------------*/
 .blue.links{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
+
 .blue.links h3{
     text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.99);
-
 }
+
 .blue.links ul{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    width: 100%;
     margin: 1rem;
 }
+
 .blue.links li:hover{
     transform: scale(1.05);
 
 }
+
 a {
     font-family: var(--bodyFont);
     font-size: 1.2rem;
@@ -249,11 +262,11 @@ a {
     text-decoration: none;
     margin: 1rem;
 }
+
 a:hover{
     cursor: pointer;
     text-decoration: underline;
     transform: scale(1.05);
-
 }
 
 
@@ -262,19 +275,24 @@ a:hover{
 .blue{
     background-color:var(--mainBlue);
 }
+
 .orange{
     background-color: #FF680A;
 }
+
 .red{
     background-color: var(--mainRed);
 }
+
 .green{
     background:var(--mainGreen);
 }
+
 .green-gradient{
     background:var(--mainGreen);
     background-color: radial-gradient(circle, rgba(247,246,255,1) 0%, rgba(11,193,99,1) 92%);
 }
+
 .purple{
     background-color: var(--purpleBase);
 }
@@ -292,24 +310,28 @@ a:hover{
     background-size: cover;
     background-repeat: no-repeat; 
 }
+
 .corner-dots{
     background-image: url("./images/cornerdots.png");
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: repeat; 
 }
+
 .small-dots{
     background-image: url("./images/dots.png");
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;  
 }
+
 .big-dots{
     background-image: url("./images/bigdots.png");
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;  
 }
+
 .speed-lines{
     background-image: url("./images/speedLines.png");
     background-position: 50% 50%;
@@ -325,17 +347,19 @@ a:hover{
     background-repeat: no-repeat;
     flex: 1;
 }
+
 .self{
     overflow-y: hidden;
 	transition-property: all;
 	transition-duration: 1.2s;
     transition-timing-function: ease-in;
     transform-origin: 0;
-
 }
+
 .self.closed{
     max-height: 0;
 }
+
 .wow{
     background-image: url("./images/wow.png");
     background-position: 50% 50%;
@@ -343,6 +367,7 @@ a:hover{
     background-repeat: no-repeat;
     padding: 10px;
 }
+
 .pow{
     margin: auto;
     width: 70%;
@@ -361,15 +386,18 @@ a:hover{
     max-width: 800px;
     flex: 1;
 }
+
 .medium{
     min-width: 400px;
     max-width: 800px;
     flex: 1;
 }
+
 .large{
     min-width: 400px;
     flex-grow: 1;
 }
+
 .extra-large{
     min-width:500px;
     flex-grow: 1;
@@ -403,18 +431,23 @@ a:hover{
 .modal-content p {
     margin-bottom: 1rem;
 }
+
 .modal-content h1{
     text-align: center;
 }
+
 .modal-content h2{
     margin-bottom: 0.5rem;
 }
+
 .modal-project-links{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    margin: 1rem;
+    margin: 1rem auto 2rem auto;
 }
+
 .modal-project-links li {
     margin-top: 1rem;
 }
@@ -432,13 +465,13 @@ a:hover{
     float: right;
     font-size: 28px;
     font-weight: bold;
-    }
+}
     
 .close:hover,
 .close:focus {
-color: black;
-text-decoration: none;
-cursor: pointer;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* ---------------------Media Queries------------------ */
