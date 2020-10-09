@@ -1,7 +1,7 @@
 const self = document.getElementById('self');
 const cakeStore = document.getElementById('cake-about-project');
 const projectUL = document.getElementsByClassName("project-links");
-const reviews = document.getElementById('reviews')
+const reviews = document.getElementById('reviews');
 
 window.addEventListener('DOMContentLoaded', (e) => {
     self.classList.toggle('closed');
@@ -19,8 +19,12 @@ for (let i = 0; i < projectUL.length; i++) {
 function showModalById(id) {
     if (id === 'cake-about') {
         console.log("cake")
+        console.log('hello')
+
         const cakeModal = document.getElementById('cake-modal');
         const cakeClose = document.getElementById('cake-close');
+        console.log(cakeClose)
+        console.log('hello')
         cakeModal.style.display = 'block';
         cakeClose.addEventListener('click', (e) => {
             if (e.target.textContent === '×') {
@@ -47,6 +51,7 @@ function showModalById(id) {
         })
     }
 }
+
 reviews.addEventListener('click', (e) => {
     if (e.target.textContent === 'Reviews') {
         const reviewModal = document.getElementById('about-modal');
