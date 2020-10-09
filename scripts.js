@@ -19,22 +19,36 @@ for (let i = 0; i < projectUL.length; i++) {
     })
 }
 
+//add event listener once modal is displayed 
 function showModalById(id) {
     if (id === 'cake-about') {
         console.log("cake")
         const cakeModal = document.getElementById('cake-modal');
-        cakeModal.style.display = 'block'
+        const cakeClose = document.getElementById('cake-close');
+        cakeModal.style.display = 'block';
+        cakeClose.addEventListener('click', (e) => {
+            if (e.target.textContent === '×') {
+                cakeModal.style.display = 'none';
+            }
+        })
     } else if (id === 'water-about') {
-        console.log("water")
+        const waterModal = document.getElementById('water-modal');
+        const waterClose = document.getElementById('water-close');
+        waterModal.style.display = 'block';
+        waterClose.addEventListener('click', (e) => {
+            if (e.target.textContent === '×') {
+                waterModal.style.display = 'none';
+            }
+        })
     } else if (id = 'healingwaters-about') {
-        console.log('healing')
+        const healingModal = document.getElementById('healing-modal');
+        const healingClose = document.getElementById('healing-close');
+        healingModal.style.display = 'block';
+        healingClose.addEventListener('click', (e) => {
+            if (e.target.textContent === '×') {
+                healingModal.style.display = 'none';
+            }
+        })
     }
 }
-//make more specific
-window.addEventListener('click', (e) => {
-    console.log(e.target.className)
-    if (e.target.className === 'close') {
-        const cakeModal = document.getElementById('cake-modal');
-        cakeModal.style.display = 'none';
-    }
-})
+
