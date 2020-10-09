@@ -252,7 +252,6 @@ nav li:hover{
 
 .blue.links li:hover{
     transform: scale(1.05);
-
 }
 
 a {
@@ -389,7 +388,6 @@ a:hover{
 
 .medium{
     min-width: 400px;
-    max-width: 800px;
     flex: 1;
 }
 
@@ -404,7 +402,6 @@ a:hover{
 }
 
 /* ---------------------Modals------------------ */
-/* The Modal */
 #cake-modal, #water-modal, #healing-modal, #about-modal {
     display: none; 
     position: fixed; 
@@ -479,7 +476,6 @@ a:hover{
 @media only screen and (max-width: 600px) {
     .small, .medium, .large, .extra-large{
         min-width: 100%;
-
     }
     #panel-grid{
         max-width: 1000px;
@@ -494,6 +490,13 @@ a:hover{
     nav li:first-child{
         /* justify-content: center; */
         margin-left: -10px;
+    }
+    .blue.links ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin: 0.5rem;
     }
 }
 
