@@ -19,7 +19,7 @@
         <article class = 'small blue intro speed-lines'>
             <div class = 'box-wrapper-column'>
                 <h2>Hi, I'm Christina</h2>
-            <div class='self'></div>
+            <div id='self' class='self closed'></div>
             </div>
         </article>
         <article class = "medium blue corner-dots">
@@ -87,7 +87,7 @@
             <div class="list">
             <h2>Tools/Miscellaneous</h2>
                 <ul >
-                    <li>Git/Github</li>
+                    <li>Git/GitHub</li>
                     <li>Postman</li>
                     <li>Accessibility</li>
                     <li>SEO</li>
@@ -101,29 +101,29 @@
         <article class = "medium green-gradient corner-dots">
             <div class='project-info'>
                 <img src="./images/cakestore-update.png" alt ="cake store project" class='screenshot'>
-                <div class = 'project-links'>
-                    <a href="https://github.com/ChristinaJackson/cakeStore-update" target="_blank">Code</a>
-                    <a href="https://christinajackson.github.io/cakeStore-update/" target="_blank">Live</a>
-                    <a href="cake.html">About</a>
-                </div>
+                <ul class = 'project-links'>
+                    <li><a href="https://github.com/ChristinaJackson/cakeStore-update" target="_blank">Code</a></li>
+                    <li> <a href="https://christinajackson.github.io/cakeStore-update/" target="_blank">Live</a></li>
+                    <li> <a id='cake-about'>About</a></li>
+                </ul>
             </div>
         </article>
         <article class = 'medium green corner-dots'>
             <div class='project-info'>
                 <img src="./images/wcp.png"  alt="water crisis project" class='screenshot'>
-                <div class='project-links'>
-                    <a href="https://watercrisisproject.org/ " target="_blank">Live</a>
-                    <a href="watercrisis.html">About</a>
-                </div>
+                <ul class='project-links'>
+                    <li><a href="https://watercrisisproject.org/ " target="_blank">Live</a></li>
+                   <li><a id='water-about'>About</a></li>
+                </ul>
             </div>
         </article>
         <article class = "medium green corner-dots">
         <div class='project-info'>
             <img src="./images/healingwaters.png" alt = "healing waters project" class='screenshot'>
-            <div class=' project-links'>
-                <a href="https://healingwaterschiro.com/ " target="_blank">Live</a>
-                <a href="healingwaters.html">About</a>
-            </div>
+            <ul class=' project-links'>
+                <li><a href="https://healingwaterschiro.com/ " target="_blank">Live</a></li>
+                <li><a id='healingwaters-about'>About</a></li>
+            </ul>
             </div>
         </article>
         <article class = "extra-large blue speed-lines links">
@@ -135,6 +135,39 @@
             </ul>
         </article>
     </section>
+
+    <section id="cake-modal">
+        <div class='modal-content'>
+        <span class="close">&times;</span>
+        <h1>Grandma's Cake Store</h1>
+          <div class="about-links">
+            <a href="https://github.com/ChristinaJackson/cakeStore-update" target="_blank">Updated Code</a>
+            <a href="https://christinajackson.github.io/cakeStore-update/" target="_blank">Updated Live</a>
+            <a href="https://github.com/ChristinaJackson/cake-store " target="_blank">Original Code</a>
+            <a href="https://christinajackson.github.io/cake-store/ " target="_blank">Original Live</a>
+          </div>
+        <div>
+          <h2>The Why:</h2>
+          <p>
+              The current image is of the project after I did some redesign work, original version can be seen in the above links. I coordinated the original version of this project because I wanted to gain experience developing collaboratively. I reached out to someone who
+              I thought would be willing to participate and together we decided that we would build a mock store front page. I built the image grid,
+              developed the high contrast mode for color accessibility, applied flex-box layout features to the header and footer as well as designing the footer. My partner 
+              implemented and adapted code for the cart from a tutorial and from there I added the filter on the products page as well as the feature to click out of cart area to close cart.
+          </p>
+        </div>
+        <div>
+          <h2>Tech used:</h2>
+          <p>HTML/CSS, Javascript, Collaboration tools: Slack, Trello, Zoom</p>
+        </div>
+        <div id='other-links'>
+          <h2>Challenges and things to improve:</h2>
+          <p>The biggest challenge here was also the most fun part of this project. My partner on this project lives in a time zone 10 hours ahead of mine. One of us was working on the 
+              project at all times, which made it go quickly but coordination of tasks was difficult at first. We then used trello to track tasks that needed to be done and grabbed what 
+              we wanted to work on that day from the board. Eventually I would like to go in and improve the positioning and design of color accessibility button.  
+          </p>
+        </div>
+    </div>
+      </section>
     <script src="scripts.js"></script>
     <script src="https://kit.fontawesome.com/917416e9ab.js" crossorigin="anonymous"></script>
     </body>
