@@ -5,8 +5,21 @@ const reviews = document.getElementById('reviews');
 
 window.addEventListener('DOMContentLoaded', (e) => {
     self.classList.toggle('closed');
-})
+});
 
+//display and close reviews modal
+reviews.addEventListener('click', (e) => {
+    if (e.target.textContent === 'Reviews') {
+        const reviewModal = document.getElementById('about-modal');
+        reviewModal.style.display = 'block';
+        reviewModal.addEventListener('click', (e) => {
+            if (e.target.textContent === '×') {
+                reviewModal.style.display = 'none';
+            }
+        })
+    }
+});
+//add event listeners on project ul
 for (let i = 0; i < projectUL.length; i++) {
     projectUL[i].addEventListener('click', (e) => {
         if (e.target.textContent === 'About') {
@@ -15,16 +28,11 @@ for (let i = 0; i < projectUL.length; i++) {
     })
 };
 
-//add event listener once modal is displayed 
+//add event listener once correct modal is displayed 
 function showModalById(id) {
     if (id === 'cake-about') {
-        console.log("cake")
-        console.log('hello')
-
         const cakeModal = document.getElementById('cake-modal');
         const cakeClose = document.getElementById('cake-close');
-        console.log(cakeClose)
-        console.log('hello')
         cakeModal.style.display = 'block';
         cakeClose.addEventListener('click', (e) => {
             if (e.target.textContent === '×') {
@@ -50,16 +58,4 @@ function showModalById(id) {
             }
         })
     }
-}
-
-reviews.addEventListener('click', (e) => {
-    if (e.target.textContent === 'Reviews') {
-        const reviewModal = document.getElementById('about-modal');
-        reviewModal.style.display = 'block';
-        reviewModal.addEventListener('click', (e) => {
-            if (e.target.textContent === '×') {
-                reviewModal.style.display = 'none';
-            }
-        })
-    }
-});
+};
