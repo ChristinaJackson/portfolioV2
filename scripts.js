@@ -3,9 +3,9 @@ const cakeStore = document.getElementById('cake-about-project');
 const projectUL = document.getElementsByClassName("project-links");
 const reviews = document.getElementById('reviews');
 
-window.addEventListener('DOMContentLoaded', (e) => {
-    self.classList.toggle('closed');
-});
+// window.addEventListener('DOMContentLoaded', (e) => {
+//     self.classList.toggle('closed');
+// });
 
 //display and close reviews modal
 reviews.addEventListener('click', (e) => {
