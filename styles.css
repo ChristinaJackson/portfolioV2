@@ -19,7 +19,7 @@
     --headingFont: 'Catamaran', sans-serif;
     --bodyFont: 'Inconsolata', monospace;
 
-    --animate-delay: 5s;
+    --animate-delay: 20s;
 }
 
 *{
