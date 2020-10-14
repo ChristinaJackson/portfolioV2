@@ -510,11 +510,11 @@ a:hover{
 }
 
 .wow{
+    height: 100%;
     background-image: url("./images/wow.png");
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 10px;
 }
 
 .pow{
